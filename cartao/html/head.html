@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- css materialize -->
+	<link rel="stylesheet" href="materialize/css/materialize.min.css">
+
+	<title>Curso PHP OO</title>
+</head>
+<body>
+
+<nav class="green">
+	<div class="nav-wrapper container">
+		<div href="teste.php" class="brand-logo light">
+			<?php echo $cliente1->getTitular() ?>
+		</div>
+		<ul class="right"><li>
+	
+		<?php
+		echo 'Saldo R$ '.number_format($cliente1->getSaldo(), "2",",",".");
+		?>
+		
+		</li></ul>
+	</div>
+</nav>
