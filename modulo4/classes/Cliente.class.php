@@ -8,4 +8,24 @@ require_once('Principal.class.php');
 
 
     
+
+        /**
+         * Get the value of site
+         */ 
+        public function getSite()
+        {
+                return $this->site;
+        }
+
+        /**
+         * Set the value of site
+         *
+         * @return  self
+         */ 
+        public function setSite($site)
+        {
+                $this->site = $site;
+
+                return $this;
+        }
 }
